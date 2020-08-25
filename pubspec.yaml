@@ -31,6 +31,7 @@ dependencies:
   animated_card: ^1.0.0+8
   flutter_bloc: ^6.0.1
   flare_flutter: ^2.0.6
+  equatable: ^1.2.4
 
 dev_dependencies:
   flutter_test:
@@ -69,3 +70,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+

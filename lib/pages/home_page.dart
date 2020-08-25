@@ -3,7 +3,8 @@ import 'dart:async';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:portfolio/cubit/animation_cubit.dart';
+import 'package:portfolio/cubits/animation_cubit.dart';
+import 'package:portfolio/models/switch_animation_model.dart';
 import 'package:portfolio/tabs/about_tab.dart';
 import 'package:portfolio/tabs/projects_tab.dart';
 
@@ -30,16 +31,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          BlocBuilder<AnimationCubit, String>(
+          BlocBuilder<AnimationCubit, SwitchAnimation>(
             builder: (context, state) {
               return Flexible(
                 child: InkWell(
-                  onTap: _disableFlare
+                  onTap: state.disableFlare
                       ? null
                       : () => animationCubit.changeAnimation(),
                   child: FlareActor(
                     'assets/switch_daytime.flr',
-                    animation: state,
+                    animation: state.animation,
                   ),
                 ),
               );
