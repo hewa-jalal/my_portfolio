@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:portfolio/pages/home_page.dart';
+
+import 'cubit/animation_cubit.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: HomePage(),
+      home: BlocProvider(
+        create: (context) => AnimationCubit(),
+        child: HomePage(),
+      ),
     );
   }
 }
