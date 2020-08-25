@@ -1,10 +1,15 @@
 import 'package:equatable/equatable.dart';
 
-class SwitchAnimation extends Equatable {
+class SwitchState extends Equatable {
   final String animation;
   final bool disableFlare;
+  final bool isDark;
 
-  SwitchAnimation({this.animation = 'day_idle', this.disableFlare = false});
+  SwitchState({
+    this.animation = 'day_idle',
+    this.disableFlare = false,
+    this.isDark = false,
+  });
   @override
   List<Object> get props => [animation, disableFlare];
 }

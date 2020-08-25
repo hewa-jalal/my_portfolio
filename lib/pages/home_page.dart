@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          BlocBuilder<AnimationCubit, SwitchAnimation>(
+          BlocBuilder<AnimationCubit, SwitchState>(
             builder: (context, state) {
               return Flexible(
                 child: InkWell(
