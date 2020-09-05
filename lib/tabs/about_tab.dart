@@ -17,8 +17,11 @@ class AboutTab extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                radius: 100,
-                child: FlutterLogo(),
+                radius: 110,
+                backgroundImage: Image.asset(
+                  Assets.avatar,
+                  alignment: Alignment(-54.0, -54.0),
+                ).image,
               ),
               SizedBox(height: 20),
               Text(
@@ -55,15 +58,6 @@ class AboutTab extends StatelessWidget {
                     onPressed: () => html.window
                         .open(Constants.PROFILE_TWITTER, 'adityadroid'),
                   ),
-                  // FlatButton.icon(
-                  //   icon: SizedBox(
-                  //       width: 20,
-                  //       height: 20,
-                  //       child: Image.asset(Assets.medium)),
-                  //   label: Text('Medium'),
-                  //   onPressed: () => html.window
-                  //       .open(Constants.PROFILE_MEDIUM, 'adityadroid'),
-                  // )
                 ],
               ),
               Row(

@@ -1,33 +1,33 @@
 import 'package:bloc/bloc.dart';
 import 'package:portfolio/models/switch_animation_model.dart';
 
-class AnimationCubit extends Cubit<SwitchState> {
-  AnimationCubit() : super(SwitchState());
+class AnimationCubit extends Cubit<AnimationState> {
+  AnimationCubit() : super(AnimationState());
 
   var _isNight = false;
 
   void changeAnimation() {
     if (_isNight) {
       emit(
-        SwitchState(animation: 'switch_day', disableFlare: true),
+        AnimationState(animation: 'switch_day', disableFlare: true),
       );
       Future.delayed(
         Duration(seconds: 1),
         () {
           emit(
-            SwitchState(animation: 'day_idle', disableFlare: false),
+            AnimationState(animation: 'day_idle', disableFlare: false),
           );
         },
       );
       _isNight = false;
     } else {
       emit(
-        SwitchState(
+        AnimationState(
             animation: 'switch_night', disableFlare: true, isDark: true),
       );
       Future.delayed(Duration(seconds: 1), () {
         emit(
-          SwitchState(
+          AnimationState(
             animation: 'night_idle',
             disableFlare: false,
             isDark: true,

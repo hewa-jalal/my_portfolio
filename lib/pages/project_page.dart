@@ -25,12 +25,13 @@ class ProjectWidget extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Expanded(
-                    flex: 40,
-                    child: Image.asset(
-                      _project.image,
-                      width: width * .25,
-                      height: width * .25,
-                    )),
+                  flex: 40,
+                  child: Image.asset(
+                    _project.image,
+                    width: width * .25,
+                    height: width * .25,
+                  ),
+                ),
                 Expanded(
                   flex: 3,
                   child: Container(),

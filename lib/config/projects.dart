@@ -3,21 +3,23 @@ import 'assets.dart';
 
 final List<Project> projects = [
   Project(
-      name: 'Truelancer',
-      image: Assets.truelancer,
+      name: 'Islam Time',
+      image: Assets.islamTime,
       description:
-          'Truelancer Mobile App is a Freelancing Platform. You can Search Jobs & Hire Freelancers for work.',
-      link: 'https://play.google.com/store/apps/details?id=com.truelancer.app'),
+          'A Islamic app that shows you when the day start and ends in Islam also it shows you midnight and last third of night time.',
+      link:
+          'https://play.google.com/store/apps/details?id=com.hiwad.islamtime'),
   Project(
-      name: 'Messio',
-      image: Assets.messio,
+      name: 'in bed ideas',
+      image: Assets.inBedIdeas,
       description:
-          'An Open-Source Messaging App built using Flutter and Firebase. Part of the series \'60 Days of Flutter',
-      link: 'https://github.com/adityadroid/messio'),
+          'we all get million dollars idea in bed! now you can catch them and become a milionare.',
+      link: 'https://play.google.com/store/apps/details?id=com.hiwa.inbedidea'),
   Project(
-      name: 'Savaari',
-      image: Assets.savaari_consumer,
+      name: 'Fruits vs Vegetables',
+      image: Assets.fruitVsVegetable,
       description:
-          'Savaari is the leading player in Outstation Cabs, Hourly Rental Cabs, Airport Pickups and Airport Drop Taxis. ',
-      link: 'https://play.google.com/store/apps/details?id=com.savaari.app'),
+          'ever wondered if a food is a fruit or vegetable? now you can easily discover that.',
+      link:
+          'https://play.google.com/store/apps/details?id=com.hiwa.food_type_quiz'),
 ];

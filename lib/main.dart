@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => AnimationCubit(),
-      child: BlocBuilder<AnimationCubit, SwitchState>(
+      child: BlocBuilder<AnimationCubit, AnimationState>(
         builder: (context, state) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
